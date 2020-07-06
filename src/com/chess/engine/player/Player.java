@@ -53,7 +53,8 @@ public abstract class Player {
                 return (King) piece;
             }
         }
-        throw new RuntimeException("Should not reach here! Not a valid board!!");
+        return null;
+        //throw new RuntimeException("Should not reach here! Not a valid board!!");
     }
 
     public boolean isMoveLegal(final Move move) {
